@@ -3,7 +3,7 @@ import Navbar from './NavBar';
 import './App.css';
 import './style.css';
 import myImage from './images/photo-1531297484001-80022131f5a1.jpeg';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 // Import the About and Contact components (create these files)
@@ -25,11 +25,11 @@ function App() {
         </div>
       </div>
 
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" component={<App />} />
+        <Route path="/about" component={<About />} />
+        <Route path="/contact" component={<Contact />} />
+        </Routes>
     </Router>
   );
 }
