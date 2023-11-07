@@ -1,0 +1,25 @@
+/* Navbar.css */
+
+nav {
+    background-color: #605b5b50;
+    backdrop-filter: blur(5px); /* Green background color */
+    padding: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  li {
+    margin: 0 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000; /* White text color */
+    
+  }
+  

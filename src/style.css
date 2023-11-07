@@ -1,0 +1,57 @@
+/* body {
+    background-image: url('/public/photo-1518655048521-f130df041f66.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    
+} */
+body {
+    -webkit-font-smoothing: antialiased;
+    color: #222;
+    letter-spacing: 0;
+    background-color: #f8f8f8;
+    background-image: url('/public/5e7c21a34149343b88c20898_Gradient-home.png'), linear-gradient(#f8f8f8, #f8f8f8);
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, auto;
+    background-attachment: scroll, scroll;
+    font-family: Pitchsans Regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+body {
+    background-image: url('/public/photo-1518655048521-f130df041f66.jpeg');
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerInto{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 20em;
+    width: 50%;
+    color: rgb(42, 36, 36);
+    backdrop-filter: blur(2px);
+    background-color: #605b5b50;
+    background-position: center; 
+}
+
+.Prof {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; 
+}
+.code {
+    font-family: monospace;
+}
+
+.column-container {
+    column-count: 2; /* Define the number of columns */
+    column-gap: 5px; /* Define the gap between columns */
+    
+    padding: 10px;
+}
+  
