@@ -15,7 +15,8 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className='containerbody'>
+      
+        <div className='column-container'>
         <div className='containerInto'>
           <div className='column-container'>
             <img src={myImage} alt="My Image" className='Prof' />
@@ -34,9 +35,28 @@ function App() {
          
           
         </div>
+        <div className='containerI'>
+          <h1>Computer Languages:
+          </h1>
+          <hr></hr>
+         <div className='code-background'>
+          <ol>
+            <li>Python<div className='dark1'>print("Hello world")</div></li>
+            <hr></hr>
+            <li>Javascript<div className='dark1'>console.log("Hello world")</div></li>
+            <hr></hr>
+            <li>C & C++</li>
+            <hr></hr>
+            <li>NodeJs</li>
+            <hr></hr>
+            <li>React</li>
+          </ol>
+         </div>
+        </div>
         
-
+        
       </div>
+      
 
       <Routes>
         <Route exact path="/" component={<App />} />
