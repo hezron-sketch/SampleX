@@ -50,7 +50,7 @@ function App() {
                     <hr></hr>
                     <div className='u'>Especially you!!</div>
                     <hr></hr>
-                    <p className='ct'>~Hezron Onyango (The Cutting Edge of Digital World)</p>
+                    <p className='ct'>~Hezron Onyango (The Cutting Edge of  The Digital World)</p>
                   </div>
                 </div>
               </div>
