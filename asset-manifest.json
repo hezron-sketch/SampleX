@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SampleX/static/css/main.882135bf.css",
+    "main.js": "/SampleX/static/js/main.55b4be56.js",
+    "static/js/787.5aced0c0.chunk.js": "/SampleX/static/js/787.5aced0c0.chunk.js",
+    "static/media/_Gradient-home.png": "/SampleX/static/media/5e7c21a34149343b88c20898_Gradient-home.7306c8fbdb7c5342f17a.png",
+    "static/media/photo-1531297484001-80022131f5a1.jpeg": "/SampleX/static/media/photo-1531297484001-80022131f5a1.8d4b43fbbf9dd7908476.jpeg",
+    "index.html": "/SampleX/index.html",
+    "main.882135bf.css.map": "/SampleX/static/css/main.882135bf.css.map",
+    "main.55b4be56.js.map": "/SampleX/static/js/main.55b4be56.js.map",
+    "787.5aced0c0.chunk.js.map": "/SampleX/static/js/787.5aced0c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.882135bf.css",
+    "static/js/main.55b4be56.js"
+  ]
+}
