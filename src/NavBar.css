@@ -1,14 +1,13 @@
 /* Navbar.css */
 
 nav {
-    background-color: #605b5b50;
-    backdrop-filter: blur(5px); /* Green background color */
+    backdrop-filter: blur(3px); /* Green background color */
     padding: 5px;
     display:inline-flexbox;
-    box-shadow: 
-    0 0 50px #ffffff,            /* outer white */
-    -10px 0 80px #f0f,        /* outer left magenta */
-    10px 0 80px #0ff;         /* outer right cyan */;
+    box-shadow:
+    0 0 50px #38383800,            /* outer white */
+    -3px 0 3px rgba(77, 76, 81, 0.35),        /* outer left magenta */
+    3px 0 3px rgba(70, 73, 73, 0.495);        /* outer right cyan */;
   }
   
   ul {
@@ -20,10 +19,7 @@ nav {
     font-weight: bold;
     
   }
-nav:hover {
-    color: rgb(198, 210, 174);
-  }
-  
+
   li {
     margin: 0 5px;
     
