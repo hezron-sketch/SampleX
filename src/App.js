@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Navbar from "./NavBar";
 import "./App.css";
@@ -38,7 +39,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-
+    <div className="body">
       <Box sx={12}>
         <Grid container spacing={4}>
           <Grid xs={6}>
@@ -206,6 +207,7 @@ function App() {
         <Route path="/about" component={<About />} />
         <Route path="/contact" component={<Contact />} />
       </Routes>
+      </div>
     </Router>
   );
 }
