@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 
 
 import Box from "@mui/material/Box";
-// import Paper from '@mui/material/Paper';
+
 import Grid from "@mui/material/Unstable_Grid2";
 import About from "./About";
 import Contact from "./Contact";
@@ -21,19 +21,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RedditIcon from "@mui/icons-material/Reddit";
 import Slideshow from "./Slideshow";
 
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === 'dark' ? '#1A202700' : '#FFF9AA00',
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   color: theme.palette.text.secondary,
-// }));
-
-// Import the About and Contact components (create these files)
-
-// const SplitscreenLayout = ({
-//   leftSide:LeftSide,
-//   rightSide:RightSide
-// })
 
 function App() {
   return (

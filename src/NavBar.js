@@ -1,59 +1,42 @@
-// // Navbar.js
-import './NavBar.css';
-import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-import { debounce } from '../src/utilities/helpers';
+import React, { useState } from 'react';
 
-// const Navbar = () => {
-//   return (
-//     
-//   );
-// };
+const Home = () => <div>Home Content</div>;
+const About = () => <div>About Content</div>;
+const Contact = () => <div>Contact Content</div>;
 
-// export default Navbar;
-// src/utilities/helpers.js
+const NavBar = () => {
+  const [activeTab, setActiveTab] = useState('home');
 
-// src/components/Navbar.js
-
-
-
-const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-
-    setPrevScrollPos(currentScrollPos);
-  }, 100);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-
-  }, [prevScrollPos, visible, handleScroll]);
-
-  const navbarStyles = {
-    position: 'relative',
-    width: '100%',
-    textAlign: 'center',
-    transition: 'top 0.6s'
-  }
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
-    <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }}>
+    <div>
       <nav>
-       <ul>
-         <li><Link to="/">About</Link></li>
-         <li><Link to="/about">Works</Link></li>
-         <li><Link to="/contact">Contact</Link></li>
-       </ul>
-     </nav>
+        <ul>
+          <li onClick={() => handleTabClick('home')}>Home</li>
+          <li onClick={() => handleTabClick('about')}>About</li>
+          <li onClick={() => handleTabClick('contact')}>Contact</li>
+        </ul>
+      </nav>
+
+      <div>
+        {activeTab === 'home' && <Home />}
+        {activeTab === 'about' && <About />}
+        {activeTab === 'contact' && <Contact />}
+      </div>
     </div>
   );
 };
 
-export default Navbar;
+const App = () => {
+  return (
+    <div>
+      <h1>Localhost</h1>
+      <NavBar />
+    </div>
+  );
+};
+
+export default App;
