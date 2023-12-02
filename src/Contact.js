@@ -1,6 +1,6 @@
 import React from "react";
 import './style.css';
-import NavBar from "./NavBar";
+import NavBar from "./NavigationBar";
 import { Router } from "react-router-dom";
 
 function Contact() {

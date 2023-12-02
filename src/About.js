@@ -1,12 +1,12 @@
 import './About.css';
 import React from 'react';
 import './style.css';
-import NavBar from './NavBar';
+import NavigationBar from './NavigationBar';
 
 function About() {
     return(
         <>
-        <NavBar />
+        <NavigationBar />
         About
         </>
     );
